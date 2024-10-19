@@ -22,11 +22,8 @@ jobs:
         run: |
           cd RobustToolbox/
           git submodule update --init --recursive
-      - name: Setup .NET Core
-        uses: actions/setup-dotnet@v3.2.0
-        with:
-          dotnet-version: 8.0.x
-          installation-path: ${{ github.workspace }}/dotnet
+      - name: Verify .NET installation
+        run: dotnet --version
       - name: Install dependencies
         run: dotnet restore
       - name: Build
