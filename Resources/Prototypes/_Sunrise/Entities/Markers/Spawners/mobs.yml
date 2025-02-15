@@ -29,3 +29,18 @@
   - type: ConditionalSpawner
     prototypes:
       - MobSnowManEvil
+
+- type: entity
+  name: Hellspawn Boss Spawner
+  suffix: Boss
+  id: SpawnMobHellspawnBoss
+  parent: MarkerBase
+  components:
+  - type: Sprite
+    layers:
+    - state: purple
+    - state: hellspawn
+      sprite: Markers/mobs.rsi
+  - type: ConditionalSpawner
+    prototypes:
+      - MobHellspawnBoss
