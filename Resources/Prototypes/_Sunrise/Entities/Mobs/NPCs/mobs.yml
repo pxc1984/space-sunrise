@@ -6,4 +6,4 @@
   components:
   - type: HTN
     rootTask:
-      task: HellspawnBossCompound
+      task: SimpleHostileCompound
